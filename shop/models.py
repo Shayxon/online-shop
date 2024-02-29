@@ -9,6 +9,8 @@ class Category(models.Model):
         indexes = [
             models.Index(fields=['name']),
         ]
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
 
     def __str__(self) -> str:
         return self.name
